@@ -1,0 +1,136 @@
+:root {
+  --fundo: #70c29c;
+  --texto: #071F40;
+  --destaque: #2563eb;
+  --branco: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: var(--branco);
+  border-bottom: 1px solid #e4e7eb;
+}
+
+.topo h1 {
+  font-size: 1.25rem;
+}
+
+.topo nav a {
+  margin-left: 1rem;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.topo nav a:hover {
+  color: var(--destaque);
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+/* 
+.imagem-banner {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+} */
+
+
+/* Imagem-banner layout*/
+.section.content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+} 
+
+.sobre {
+  flex: 1;
+}
+.imagem-banner {
+  width: 100%;
+  height: auto;
+  border-radius: 8px ;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-conteudo {
+    flex-direction: column; /* No celular, a imagem fica em cima e o texto embaixo */
+    text-align: center;
+  }
+
+
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background: var(--destaque);
+  color: var(--branco);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--destaque);
+  outline-offset: 2px;
+}
+
+.bloco {
+  background: var(--branco);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.bloco h2 {
+  margin-bottom: 0.5rem;
+}
+
+.rodape {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  color: #616e7c;
+}
